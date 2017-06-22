@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.mulhyac</groupId>
+	<artifactId>zimg-client</artifactId>
+	<version>1.1</version>
+	<packaging>jar</packaging>
+
+	<name>zimg</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.nutz</groupId>
+			<artifactId>nutz</artifactId>
+			<version>1.r.61.r2</version>
+		</dependency>
+	</dependencies>
+
+	<!-- 配置项目版本管理 -->
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>releases repository</name>
+			<url>http://192.168.2.199:20111/content/repositories/releases/</url>
+			<uniqueVersion>true</uniqueVersion>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>snapshots repository</name>
+			<url>http://192.168.2.199:20111/content/repositories/snapshots/</url>
+			<uniqueVersion>true</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
